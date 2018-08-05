@@ -14,7 +14,7 @@ createRoot(void){
     /**
      * Create a Limit structure as root and return a ptr to it.
      */
-    Limit *ptr_limit = malloc(sizeof(Limit));
+    Limit *ptr_limit = (Limit* )malloc(sizeof(Limit));
     initLimit(ptr_limit);
     ptr_limit->limitPrice = -INFINITY;
     return ptr_limit;
