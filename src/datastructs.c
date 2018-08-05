@@ -6,7 +6,7 @@
 
 void
 pushToQueue(Queue *q, Limit *limit){
-    QueueItem *ptr_newItem = malloc(sizeof(QueueItem));
+    QueueItem *ptr_newItem =(QueueItem *) malloc(sizeof(QueueItem));
     ptr_newItem->limit = limit;
 
     if(q->head != NULL){
