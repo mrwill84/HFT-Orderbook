@@ -165,7 +165,7 @@ getHeight(Limit *limit){
     int height = -1; /*Set to -1; if limit has no children, this will end up being 0*/
     int qsize = 0;
 
-    Queue *ptr_queue = malloc(sizeof(Queue));
+    Queue *ptr_queue = (Queue *)malloc(sizeof(Queue));
     initQueue(ptr_queue);
     Limit *ptr_current;
     pushToQueue(ptr_queue, limit);
